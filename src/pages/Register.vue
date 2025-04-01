@@ -1,5 +1,16 @@
+<script>
+import MainH1 from '../components/MainH1.vue'
+export default {
+    name: 'Register',
+    components: {
+        MainH1
+    }
+}
+
+</script>
+
 <template>
-    <div class="container py-4">
-        <h1 class="mb-3">Registrarse en DvSocial</h1>
+    <div>
+        <MainH1>Registrarse en DvSocial</MainH1>
     </div>
 </template>

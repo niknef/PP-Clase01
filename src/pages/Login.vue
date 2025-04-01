@@ -1,5 +1,15 @@
+<script>
+import MainH1 from '../components/MainH1.vue'
+export default {
+    name: 'Login',
+    components: {
+        MainH1
+    }
+}
+
+</script>
 <template>
-    <div class="container py-4">
-        <h1 class="mb-3">Ingresar a mi cuenta</h1>
+    <div>
+        <MainH1>Ingresar a mi cuenta</MainH1>
     </div>
 </template>

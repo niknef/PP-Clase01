@@ -12,51 +12,38 @@ export default {
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Dv Social</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <nav class="flex p-4 bg-gray-800 text-white gap-4 items-center justify-between">
+  
+    <a href="#" class="text-xl">Dv Social</a>
+    <button>
+      <span></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <RouterLink class="nav-link active" aria-current="page" to="/">Home</RouterLink>
+   
+      <ul class="flex gap-4">
+        <li>
+          <RouterLink to="/">Home</RouterLink>
         </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link active" aria-current="page" to="./global-chat">Chat Global</RouterLink>
+        <li>
+          <RouterLink to="./global-chat">Chat Global</RouterLink>
         </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link active" aria-current="page" to="./login">Iniciar Sesion</RouterLink>
+        <li>
+          <RouterLink to="./login">Iniciar Sesion</RouterLink>
         </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link active" aria-current="page" to="./register">Registrarse</RouterLink>
+        <li>
+          <RouterLink to="./register">Registrarse</RouterLink>
         </li>
 
       </ul>
-    </div>
-  </div>
+   
+ 
 </nav>
-<div>
+<div class="container mx-auto p-4">
     <RouterView />
-    
-
 </div>
 
-<footer class="footer">
+<footer class="bg-gray-400/80 text-white p-4 mt-4 flex flex-col items-center">
+    <p>Desarrollado por Nicolas Firpo</p>
     <p>Nicolas Firpo &copy; 2025</p>
 </footer>
 </template>
 
-<style>
-    .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f8f9fa;
-    color: #495057;
-    text-align: center;
-    padding: 10px 0;
-}
-</style>

@@ -1,4 +1,4 @@
-import './style.css'
+import './styles.css'
 //Importamos la funcion para crear la aplicacion de Vue 
 import { createApp } from 'vue'
 import router from './router/router.js'
